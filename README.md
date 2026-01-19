@@ -6,7 +6,7 @@ Gerenciador de arquivos e pastas desenvolvido em **Python**, voltado para **auto
 ## 🔹 Funcionalidades
 
 - Listar pastas e subpastas
-- Listar arquivos e filtrar por extensão
+- Listar arquivos e filtra por extensão
 - Copiar e mover arquivos e pastas
 - Renomear arquivos
 - Remover arquivos ou pastas inteiras com confirmação
