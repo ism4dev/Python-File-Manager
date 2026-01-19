@@ -34,11 +34,11 @@ Gerenciador de arquivos e pastas desenvolvido em **Python**, voltado para **auto
 pip install InquirerPy
 ````
 
-> Também pode ser compilado em executável com PyInstaller ou Nuitka.
+> Também pode ser compilado em executável com PyInstaller ou Nuitka para Windows (`.exe`) ou Linux (`.elf`).
 
 ---
 
-## 🔹 Como usar
+## 🔹 Como usar (via Python)
 
 1. Clone o repositório:
 
@@ -60,21 +60,49 @@ python main.py
 
 ---
 
-## 🔹 Compilando em executável
+## 🔹 Compilando em executáveis
 
-### PyInstaller (Windows):
+Para manter **versões separadas de Linux e Windows**, crie um diretório `builds/` com subpastas `windows/` e `linux/`:
+
+```
+builds/
+├── windows/
+└── linux/
+```
+
+### PyInstaller
+
+**Windows:**
 
 ```bash
 py -m PyInstaller --onefile --name "Python File Manager" --icon path/to/icon.ico main.py
+move dist/PythonFileManager.exe builds/windows/
 ```
 
-### Nuitka (Windows/Linux):
+**Linux:**
 
 ```bash
-python -m nuitka --onefile --windows-icon-from-ico=path/to/icon.ico main.py
+py -m PyInstaller --onefile --name "Python File Manager" main.py
+mv dist/PythonFileManager builds/linux/PythonFileManager.elf
 ```
 
 > No Linux, o ícone deve ser configurado via arquivo `.desktop` para aparecer no menu gráfico.
+
+### Nuitka (opcional, mais rápido)
+
+**Windows:**
+
+```bash
+python -m nuitka --onefile --windows-icon-from-ico=path/to/icon.ico main.py
+move main.exe builds/windows/
+```
+
+**Linux:**
+
+```bash
+python -m nuitka --onefile main.py
+mv main.elf builds/linux/
+```
 
 ---
 
@@ -85,7 +113,10 @@ python-file-manager/
 │
 ├── main.py             # Script principal do File Manager
 ├── README.md           # Documentação
-└── requirements.txt    # Dependências (opcional)
+├── requirements.txt    # Dependências (opcional)
+└── builds/             # Executáveis compilados
+    ├── windows/        # Versões .exe
+    └── linux/          # Versões .elf
 ```
 
 ---
