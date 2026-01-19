@@ -1,9 +1,6 @@
-````markdown
 # 🗂️ Python File Manager
 
 Gerenciador de arquivos e pastas desenvolvido em **Python**, voltado para **automatização de tarefas**, **suporte técnico** e **operações em Windows e Linux**.
-
----
 
 ## 🔹 Funcionalidades
 
