@@ -97,7 +97,7 @@ Primeira experiência profissional em Python aplicando:
 
 ## 🔹 Contato
 
-* LinkedIn: [Perfil](https://www.linkedin.com/in/ismael-melo-20969038a/)
+* LinkedIn: [Ismael Melo](https://www.linkedin.com/in/ismael-melo-20969038a/)
 
 ```
 ```
