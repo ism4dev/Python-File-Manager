@@ -97,8 +97,7 @@ Primeira experiência profissional em Python aplicando:
 
 ## 🔹 Contato
 
-* LinkedIn: [Seu Perfil](https://www.linkedin.com/in/seu-usuario/)
-* GitHub: [Python File Manager](https://github.com/seu-usuario/python-file-manager)
+* LinkedIn: [Perfil](https://www.linkedin.com/in/ismael-melo-20969038a/)
 
 ```
 ```
