@@ -18,7 +18,7 @@ Gerenciador de arquivos e pastas desenvolvido em **Python**, voltado para **auto
 
 ## 🔹 Tecnologias e Competências Aplicadas
 
-- Python 3.14
+- Python 3.x
 - `InquirerPy` para menus interativos
 - `shutil`, `os`, `pathlib` para manipulação de arquivos e pastas
 - Tratamento de exceções e validação de inputs
@@ -28,7 +28,7 @@ Gerenciador de arquivos e pastas desenvolvido em **Python**, voltado para **auto
 
 ## 🔹 Pré-requisitos
 
-- Python 3.14 ou superior (somente se quiser rodar o script `.py`)  
+- Python 3.x (somente se quiser rodar o script `.py`)  
 - Dependências:
 
 ```bash
